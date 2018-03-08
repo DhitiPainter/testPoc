@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        Feedback
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <form (ngSubmit)="logFeedback()">
+        <ion-item>
+            <ion-label>Feedback</ion-label>
+            <ion-input type="text" [(ngModel)]="msg" name="msg"></ion-input>
+        </ion-item>
+        <button ion-button type="submit" block>Log Feedback</button>
+    </form>>
+  </ion-content>
+  
